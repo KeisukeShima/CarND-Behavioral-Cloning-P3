@@ -37,6 +37,7 @@ for line in lines:
     filename = source_path.split('/')[-1]
     current_path = '../data/IMG/' + filename
     image = cv2.imread(current_path)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     images.append(image)
     measurement = float(line[3])
     measurements.append(measurement)
@@ -53,6 +54,7 @@ for line in lines:
     filename = source_path.split('/')[-1]
     current_path = '../data2/IMG/' + filename
     image = cv2.imread(current_path)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     images.append(image)
     measurement = float(line[3])
     measurements.append(measurement)
@@ -69,6 +71,7 @@ for line in lines:
     filename = source_path.split('/')[-1]
     current_path = '../data3/IMG/' + filename
     image = cv2.imread(current_path)
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     images.append(image)
     measurement = float(line[3])
     measurements.append(measurement)
